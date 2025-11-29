@@ -5,39 +5,35 @@
     <title>Family Calendar Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      body {
-        background: #fafdff;
+      * {
         margin: 0;
         padding: 0;
-        font-family: 'Segoe UI', Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        overflow: hidden;
+        box-sizing: border-box;
       }
-      .calendar-container {
-        margin: 0;
-        background: #fff;
-        border-radius: 0;
-        box-shadow: none;
-        padding: 0;
+      html, body {
         width: 100%;
         height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        overflow: hidden;
+      }
+      body {
+        background: #fff;
+        font-family: 'Segoe UI', Arial, sans-serif;
+      }
+      .calendar-container {
+        width: 100vw;
+        height: 100vh;
       }
       iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
         border: none;
       }
     </style>
 </head>
 <body>
     <div class="calendar-container">
-        <!-- Replace the src with your Google Calendar embed URL -->
-        <iframe src="https://calendar.google.com/calendar/embed?height=800&wkst=2&ctz=America%2FLos_Angeles&showPrint=0&mode=AGENDA&showTz=0&showCalendars=0&showDate=0&showTitle=0&showTabs=0&showNav=0&src=cDU0a2w5aHI0Z2Q5ZWQwaTZkcDhhbGo1aDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23795548" style="border-width:0" width="1100" height="800" frameborder="0" scrolling="no"></iframe>
+        <iframe src="https://calendar.google.com/calendar/embed?height=800&wkst=2&ctz=America%2FLos_Angeles&showPrint=0&mode=AGENDA&showTz=0&showCalendars=0&showDate=0&showTitle=0&showTabs=0&showNav=0&src=cDU0a2w5aHI0Z2Q5ZWQwaTZkcDhhbGo1aDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23795548" frameborder="0" scrolling="no"></iframe>
     </div>
 </body>
 </html>
